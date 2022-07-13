@@ -6,18 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register now | Indic Bank</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h3>Register for netbanking account now</h3>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./aboutus.html">About Us</a>
+        <a href="./services.html">Services</a>
+        <a href="./netbanking.html">Netbanking</a>
+        <a href="./contactus.html">Contact Us</a>
+    </nav>
+    <hr class="hr-style-two">
+    <h3 class="center">Register for netbanking account now</h3>
     <form action="">
-        <label for="accno">Account Number: </label> <input type="number" name="accno" id="accno"><br><br>
-        <label for="phoneno">Phone Number: </label> <input type="number" name="phoneno" id="phoneno"><br><br>
-        <label for="email">Email address: </label> <input type="email" name="email" id="email"><br><br>
-        <input type="submit" value="Register"> <input type="reset" value="Clear">
-        <br><br>
-        <p>Note: <b>You will recieve an email with a link from netbanking@indic.com to complete the procedure</b></p>
+        <p><label for="accno" class="cell">Account Number:</label><input type="number" name="accno" id="accno"
+                class="cell"></p>
+        <p><label for="phoneno" class="cell">Phone Number:</label><input type="number" name="phoneno" id="phoneno"
+                class="cell"></p>
+        <p><label for="email" class="cell">Email address:</label><input type="email" name="email" id="email"
+                class="cell"></p>
+        <input type="submit" value="Register" class="imp-btn">
+        <input type="reset" value="Clear" class="imp-btn">
+
     </form>
+    <p class="center">Note: <b>You will recieve an email with a link from netbanking@indic.com to complete the procedure</b></p>
 </body>
 
 </html>
