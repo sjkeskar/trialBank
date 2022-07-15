@@ -24,17 +24,21 @@ const calculateEMI = () => {
     duration = document.getElementById("duration").value * 12
     applicantName = document.getElementById("applicant").value
     flag = true
-    if (duration === 0 || duration > 25 || duration <= 1) {
+    if (duration === 0 || (duration / 12) > 25 || (duration / 12) <= 1 || !duration) {
         flag = false
         alert("Please choose correct duration")
     }
-    if (interestRate === 0) {
+    if (interestRate === 0 || !interestRate) {
         flag = false
         alert("Please choose your loan type")
     }
-    if (principal === 0) {
+    if (principal === 0 || !principal) {
         flag = false
         alert("Please Enter correct loan amount")
+    }
+    if (!applicantName) {
+        flag = false
+        alert("Please Enter your name")
     }
     if (flag) {
         roi = (interestRate / 12) / 100
