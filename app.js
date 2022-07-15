@@ -26,18 +26,22 @@ const calculateEMI = () => {
     flag = true
     if (duration === 0 || (duration / 12) > 25 || (duration / 12) <= 1 || !duration) {
         flag = false
+        console.log(duration);
         alert("Please choose correct duration")
     }
     if (interestRate === 0 || !interestRate) {
         flag = false
+        console.log(interestRate);
         alert("Please choose your loan type")
     }
     if (principal === 0 || !principal) {
         flag = false
+        console.log(principal);
         alert("Please Enter correct loan amount")
     }
     if (!applicantName) {
         flag = false
+        console.log(applicantName);
         alert("Please Enter your name")
     }
     if (flag) {
