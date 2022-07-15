@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Other Services | Indic Bank</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -31,6 +32,29 @@
             <li>American Express Credit Card *</li>
         </ul>
         <sub>* American Express Credit Card is only Provided to customer with cibil score above 1000</sub>
+    </div>
+    <div class="center">
+        <h2>EMI calculator</h2>
+        <form name="f1">
+            <p><label for="applicant" class="cell">Applicant Name:</label><input type="text" name="applicant"
+                    id="applicant" class="cell"></p>
+            <p><label for="typeloan" class="cell">Type of Loan: </label><select name="typeloan" id="typeloan"
+                    class="cell" onchange="roiAmount()">
+                    <option value="" selected>Choose Type</option>
+                    <option value="home">Home</option>
+                    <option value="car">Car</option>
+                    <option value="personal">Personal</option>
+                </select></p>
+            <p><label for="amount" class="cell">Loan Amount: </label><input type="number" name="amount" id="amount"
+                    class="cell"></p>
+            <p><label for="duration" class="cell">Duration ( Years ):</label><input type="text" name="duration"
+                    id="duration" class="cell"></p>
+            <p><label for="roi" class="cell">Interest Rate: </label><span class="roi" class="cell" id="roi"></span></p>
+            <input type="button" value="Calculate EMI" class="imp-btn" onclick="calculateEMI()">
+        </form>
+        <div class="center" id="res">
+
+        </div>
     </div>
 </body>
 
